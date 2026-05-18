@@ -1,0 +1,9 @@
+{
+  "typeCheckingMode": "basic",
+  "exclude": [
+    "pages/**/*.py",
+    "src/components/**/*.py",
+    "src/app.py",
+    "src/home.py"
+  ]
+}

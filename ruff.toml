@@ -1,0 +1,7 @@
+line-length = 100
+target-version = "py311"
+exclude = [
+  "examples/*.py",
+  "rust/**/target",
+  "**/__pycache__"
+]

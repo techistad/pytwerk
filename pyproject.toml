@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytwerk"
+version = "0.1.0"
+description = "PyTwerk: Python-first component framework with inline HTML syntax."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "flask>=3.0.0,<4.0.0",
+  "django>=5.0.0,<6.0.0",
+]
+keywords = ["python", "framework", "components", "templating", "flask", "django"]
+
+[project.scripts]
+pytwerk = "pytwerk.cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["pytwerk*"]
+exclude = ["examples*", "tests*", "rust*"]
