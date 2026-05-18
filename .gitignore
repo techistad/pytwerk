@@ -6,5 +6,6 @@ __pycache__/
 .vscode/
 dist/
 build/
+*.egg-info/
 
 rust/**/target/
